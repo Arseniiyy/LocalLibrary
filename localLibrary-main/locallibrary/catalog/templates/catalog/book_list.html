@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    
+    {% if my_book_list %}
+        <ul>
+        {% for book in my_book_list %}
+            <li>{{ book.title }} by {{ book.author }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No books found.</p>
+    {% endif %}
+    
+    {% if some_data %}
+        <p>Additional data: {{ some_data }}</p>
+    {% endif %}
+
+      <p>
+    You have visited this page {{count_visit}} {% if count_visit == 1 %} time {% else %} times {% endif %}
+  </p>
+</body>
+</html>
