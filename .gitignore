@@ -1,0 +1,43 @@
+# Создайте файл .gitignore в КОРНЕ проекта со следующим содержанием:
+
+# Базы данных
+*.sqlite3
+*.db
+db.sqlite3
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+virtualenv/
+
+# Переменные окружения
+.env
+.env.local
+.env.production
+.env.dev
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Django
+media/
+staticfiles/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Миграции (если хотите, но обычно их комитят)
+# !/apps/*/migrations/
+# /apps/*/migrations/*.py
